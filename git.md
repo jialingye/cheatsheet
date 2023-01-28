@@ -43,12 +43,12 @@ git config --global user.email "my-email@gmail.com"
 
 # Merging
 
--merge branch A into branch B. Add no-ff option for no-fast-forward merge
+- merge branch A into branch B. Add no-ff option for no-fast-forward merge
 ```
 git checkout b
 git merge a
 ```
--merge & squash all commits into one new commit
+- merge & squash all commits into one new commit
 ```
 git merge --squash a
 ```
