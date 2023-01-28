@@ -5,7 +5,7 @@
 git config --global user.name "Danny Adams"
 git config --global user.email "my-email@gmail.com"
 ```
-#Start a Project
+# Start a Project
 - Create a local repo (omit<directory> to initialise the current directory as a git repo)
 `git init <directory>`
 - Download a remote repo
@@ -74,6 +74,14 @@ git rebase -i main
 - add a remote repo `git remote add <alias> <url>`
 - fetch the remote repo's copy of the current branch, then merge `git pull`
 - upload local content to remote repo `git push <alias>`
+- fetch a specific branch `git fetch <alias> <branch>`
 
+# Undoing
+
+- move (&/or rename) a file & stage move `git mv <existing_path> <new_path>`
+- remove a file from working directory & stageing area, then stage the remove `git rm <file>`
+- view a previous commit (READ Only) `git checkout <commit_ID>`
+- creat a new commit, reverting the changes from a specified commit `git revert <commit_ID>`
+- go back to previous commit & delete all commits ahead of it `git reset <commit_ID>`
 
 
